@@ -16,7 +16,7 @@ SOFTWARE.
 let penaltyThreshold = 5; // Penalty threshold for mistypes
 let typingDuration = 60; // Duration of input session in seconds
 let strategyDuration = 90; // Strategy time in seconds
-let googleSpreadsheetUrl = 'https://script.google.com/macros/s/AKfycbwxxXBIPdTMWauw22onm0-9M_j2R7HiyiQjTyamROOb-HVwFqGzgaJSbc5tFJvbEHhZpg/exec'; // Google Spreadsheet's webapplication URL
+let googleSpreadsheetUrl = 'YOUR_WebApp_URL'; // Google Spreadsheet's webapplication URL
 
 
 //
