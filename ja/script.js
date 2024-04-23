@@ -14,7 +14,7 @@ SOFTWARE.
 let penaltyThreshold = 5; // ミスタイプのペナルティ閾値
 let typingDuration = 60; // 入力セッションの秒数
 let strategyDuration = 90; // 作戦タイムの秒数
-let googleSpreadsheetUrl = 'https://script.google.com/macros/s/AKfycbwxxXBIPdTMWauw22onm0-9M_j2R7HiyiQjTyamROOb-HVwFqGzgaJSbc5tFJvbEHhZpg/exec'; // Google SpreadsheetのウェブアプリURL
+let googleSpreadsheetUrl = 'YOUR_WebAPP_URL'; // Google SpreadsheetのウェブアプリURL
 
 //設定はここまで
 
