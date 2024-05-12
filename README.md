@@ -1,111 +1,111 @@
-# SLAPタイピングタスク (SLAP Typing Task)
+# SLAP Typing Task
 
-SLAPタイピングタスクは、2人のプレイヤーが1台のコンピュータと1つのキーボードを共有し、協力して特定の文字列を入力するタイピングゲームです。このタスクは、実験環境において、チームワーク、コミュニケーション、問題解決能力などの「チームワーク」を測定するために開発されたツールです。
+The SLAP Typing Task is a typing game where two players share one computer and one keyboard, cooperating to type a specific string of characters. This task was developed as a tool to measure "teamwork" such as cooperation, communication, and problem-solving ability in an experimental setting.
 
-このタスクの概要、理論的基礎、実装、使用方法から応用例についての詳細は、以下の論文をご覧ください。
+For more details on the overview, theoretical foundation, implementation, usage, and applications of this task, please refer to the following paper:
 
 > Hattori, Keisuke, SLAP Typing Task: A New Experimental Paradigm for Teamwork Research (May 11, 2024). Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824958
 > 
 
-## タスクの概要
+## Task Overview
 
-- **目的**: チームワーク、コミュニケーション、問題解決能力を評価する協力タスク
-- **方法**:
-    - 2人1組でペアを組み、1つのキーボードを共有する
-    - 一方のプレイヤーが「S」と「A」、もう一方が「L」と「P」のキーを担当し、交互にキー入力することで「SLAP」という文字列を入力する
-    - 所定の制限時間（初期設定は60秒）以内に「SLAP」という文字列をできるだけ多く入力する
-- **セッション**: 全3回の入力セッションが行われ、各セッション間には、次回のセッションでの高得点をとるために、ペアでコミュニケーションを取る作戦タイム（初期設定は90秒）が設けられている
-- **評価項目**:
+- **Purpose**: To evaluate teamwork, communication, and problem-solving ability through a cooperative task.
+- **Method**:
+    - Participants are paired up, and each pair shares one keyboard.
+    - One player is responsible for the "S" and "A" keys, while the other is responsible for the "L" and "P" keys. They alternately press the keys to input the string "SLAP".
+    - The goal is to input the string "SLAP" as many times as possible within the given time limit (default is 60 seconds).
+- **Sessions**: There are three typing sessions in total. Between each session, there is a strategy time (default is 90 seconds) for the pair to communicate and plan for achieving a high score in the next session.
+- **Evaluation Items**:
     
-    各セッションにおける
+    For each session:
     
-    - 「SLAP」の正しい入力回数（”SLAPs typed”）
-    - ミスタイプの数（”Mistypes”）
-    - 得点（”Score”）
+    - Number of correctly typed "SLAP"s ("SLAPs typed")
+    - Number of mistypes ("Mistypes")
+    - Score ("Score")
     
-    得点（Score）は、SLAP入力回数（SLAPs typed）から、ミスタイプ（”Mistypes”）の個数に応じたペナルティを引いたもので定義され、研究者側が自由にこのペナルティの大きさを設定することができる（初期設定では、ミスタイプ5個につき1点の減点）
+    The score is defined as the number of SLAPs typed minus a penalty based on the number of mistypes. Researchers can freely set the magnitude of this penalty (default is a 1-point deduction for every 5 mistypes).
     
-- **Google Spreadsheetへのスコアの自動送信：**
+- **Automatic Score Submission to Google Spreadsheet:**
     
-    インターネット回線と適切な設定により、タスクのデータは自動的に研究者自身のGoogle Spreadsheetに自動送信されます。
+    With an internet connection and appropriate settings, the task data is automatically sent to the researcher's own Google Spreadsheet.
     
-- **参加者のチートを検出する機能:**
+- **Cheating Detection Feature:**
     
-    入力セッションにおいて、参加者がコピー&ペーストなどの機能を不正に利用した場合には、それが研究者側に通知される機能（参加者には知らされたことは伝わりません）があります。これにより、チートなどの不正行為を検出するような実験デザインの研究にも使用することができます。
+    If participants improperly use functions such as copy and paste during the typing session, it will be notified to the researcher (without the participants' knowledge). This allows the task to be used for research with experimental designs that detect cheating and other misconduct.
     
 
-## タスクの体験
+## Task Experience
 
-以下のデモサイトにて、実際にタスクを体験することができます。
+You can experience the actual task at the following demo site:
 
-日本語版: https://httrksk.github.io/slaptyping/jp/
+English version: https://httrksk.github.io/slaptyping/en/
 
-英語版: https://httrksk.github.io/slaptyping/en/
+Japanese version: https://httrksk.github.io/slaptyping/jp/
 
-## タスクの意義
+## Significance of the Task
 
-SLAPタイピングタスクは、以下の4つの重要な要素を象徴しています:
+The SLAP Typing Task symbolizes the following four important elements:
 
-1. **Synchronization (同期)**: メンバー間での入力タイミングの同期
-2. **Learning (学習)**: 協調のリズムやタイミングの学習と改善
-3. **Adaptability (適応能力)**: 様々な状況への迅速な適応と対応
-4. **Persistence (継続性)**: 諦めずタスクに取り組む粘り強さ
+1. **Synchronization**: Synchronization of input timing between members
+2. **Learning**: Learning and improving the rhythm and timing of collaboration
+3. **Adaptability**: Quick adaptation and response to various situations
+4. **Persistence**: Perseverance in tackling the task without giving up
 
-このタスクでは、単にキーボード入力能力だけでなく、ペアで動作を同期・調整させるといった非言語的コミュニケーションや、問題の認識、学習、そして問題に対する迅速な適応、作戦タイムでの効率的な問題解決のためのコミュニケーション、さらにはチームの粘り強さが不可欠です。「SLAP」という単語自体が、これらの要素の頭文字を取って構成されています。
+This task requires not only keyboard input skills but also nonverbal communication such as synchronizing and adjusting actions as a pair, recognizing problems, learning, quickly adapting to problems, communicating effectively during the strategy time for problem-solving, and team persistence. The word "SLAP" itself is composed of the initials of these elements.
 
-## 開発者情報
+## Developer Information
 
-- 服部 圭介 (Keisuke Hattori)
-- 青山学院大学 経営学部 教授
+- Keisuke Hattori
+- Professor, School of Business, Aoyama Gakuin University
 - [hattori@busi.aoyama.ac.jp](mailto:hattori@busi.aoyama.ac.jp)
 - https://httrksk.github.io/
 
-## ライセンスと使用条件
+## License and Terms of Use
 
-このプログラムは、MITライセンスのもとで公開されています。以下の条件に従い、誰でも自由に本ソフトウェアを使用、複製、改変、結合、出版、配布、サブライセンスおよび/または販売することができます。また、本ソフトウェアを提供された人々に対しても、これらの権利を同様に与えることができます。
+This program is released under the MIT License. Anyone is free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software under the following conditions. The same rights can be granted to those who receive the software.
 
-本ソフトウェアは「現状のまま」提供され、いかなる明示または暗黙の保証も行われません。商業的な利用や特定の目的への適合性の保証を含む、一切の保証が除外されます。詳細は、MITライセンスをご確認ください。
+The software is provided "as is" without any express or implied warranty. Any warranties, including but not limited to warranties of merchantability and fitness for a particular purpose, are disclaimed. See the MIT License for more details.
 
-**このタスクを使って研究、執筆、記事を発表する場合には、必ず以下の文献を引用してください。**
+**When using this task for research, writing, or publication, please cite the following literature:**
 
 > Hattori, Keisuke, SLAP Typing Task: A New Experimental Paradigm for Teamwork Research (May 11, 2024). Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824958
 > 
 
-## インストール方法
+## Installation
 
-1. このリポジトリをクローンまたはダウンロードします。英語版を使用したい場合は /en/ フォルダを、日本語版を使用したい場合は /jp/ フォルダをダウンロードしてください。
-2. `index.html`、`script.js`、`style.css` をウェブサーバー上の適切なディレクトリに配置します。
-3. `script.js` を開いて、先頭部分にある設定を適宜変更します。
-4. `index.html` をWebブラウザで開いてください。
+1. Clone or download this repository. Use the /en/ folder for the English version or the /jp/ folder for the Japanese version.
+2. Place `index.html`, `script.js`, and `style.css` in the appropriate directory on your web server.
+3. Open `script.js` and modify the settings at the top as needed.
+4. Open `index.html` in a web browser.
 
-## プログラムの設定方法
+## Program Settings
 
-### パラメータの設定
+### Parameter Settings
 
-`script.js` の先頭部分でタスクのパラメータを設定できます。
+Task parameters can be set at the beginning of `script.js`.
 
 ```jsx
-// グローバル設定
-let penaltyThreshold = 5; // ミスタイプのペナルティ閾値
-let typingDuration = 60; // 入力セッションの秒数
-let strategyDuration = 90; // 作戦タイムの秒数
-let googleSpreadsheetUrl = "YOUR_WebAPP_URL"; // Google SpreadsheetのウェブアプリURL
+// Global settings
+let penaltyThreshold = 5; // Mistype penalty threshold
+let typingDuration = 60; // Typing session duration in seconds
+let strategyDuration = 90; // Strategy time duration in seconds
+let googleSpreadsheetUrl = "YOUR_WebAPP_URL"; // Google Spreadsheet web app URL
 
-//設定はここまで
+// Settings end here
 ```
 
-- `penaltyThreshold`: ミスタイプの減点ペナルティの閾値を設定します。初期設定は 5 （つまり、5個のミスタイプにつき、SLAP入力回数から1が減点されたものが得点となります）。
-- `typingDuration`: 各入力セッションの制限時間(秒)を設定します。初期設定は 60秒です。このタイムを調整することで、チームタスクが、どの程度継続性（persistence）を重視するものなのかを調整できます。
-- `strategyDuration`: セッション間の作戦タイムの長さ(秒)を設定します。初期設定は 90秒です。このタイムを調整することで、チームタスクが、どの程度チーム内コミュニケーションを重視するものなのかを調整できます。
-- `googleSpreadsheetUrl`: あなたのGoogle SpreadsheetのウェブアプリケーションURLを設定（後述）することで、参加者のパフォーマンスデータを自動で回収することができます。
+- `penaltyThreshold`: Set the threshold for the mistype penalty deduction. The default is 5 (i.e., for every 5 mistypes, 1 point is deducted from the number of SLAPs typed to determine the score).
+- `typingDuration`: Set the time limit (in seconds) for each typing session. The default is 60 seconds. By adjusting this time, you can adjust how much the team task emphasizes persistence.
+- `strategyDuration`: Set the length (in seconds) of the strategy time between sessions. The default is 90 seconds. By adjusting this time, you can adjust how much the team task emphasizes team communication.
+- `googleSpreadsheetUrl`: By setting the web application URL of your Google Spreadsheet (described later), you can automatically collect participant performance data.
 
-### Google Spreadsheetの設定
+### Google Spreadsheet Setup
 
-SLAPタイピングタスクでは、参加者のパフォーマンスデータをGoogle Spreadsheetに自動的に保存することができます。この機能を利用するためには、以下の手順に従ってGoogle Apps Scriptを設定する必要があります：
+The SLAP Typing Task allows you to automatically save participant performance data to a Google Spreadsheet. To use this feature, you need to set up Google Apps Script by following these steps:
 
-1. Googleドライブ上に新しいスプレッドシートを作成し、第一行目に列（変数）名である `ID1`, `ID2`, `SLAP1`, `TC1`, `SCORE1`, `CHEATED1`, `SLAP2`, `TC2`, `SCORE2`, `CHEATED2`, `SLAP3`, `TC3`, `SCORE3`, `CHEATED3`, `TIMESTAMP` と設定する。
-2. スプレッドシート内で「ツール」>「スクリプトエディタ」を選択し、Google Apps Scriptのエディタを開く。
-3. エディタ内に、以下のコードを入力する（最初から入っているコードは消して上書きする形で）。
+1. Create a new spreadsheet on Google Drive and set the column (variable) names in the first row as `ID1`, `ID2`, `SLAP1`, `TC1`, `SCORE1`, `CHEATED1`, `SLAP2`, `TC2`, `SCORE2`, `CHEATED2`, `SLAP3`, `TC3`, `SCORE3`, `CHEATED3`, `TIMESTAMP`.
+2. In the spreadsheet, select "Tools" > "Script editor" to open the Google Apps Script editor.
+3. In the editor, enter the following code (overwrite the existing code):
     
     ```jsx
     function doPost(e) {
@@ -133,17 +133,20 @@ SLAPタイピングタスクでは、参加者のパフォーマンスデータ�
         JSON.stringify({ result: "success" })
       ).setMimeType(ContentService.MimeType.JSON);
     }
+    
     ```
     
-4. スクリプトを保存し、「デプロイ」>「新しいデプロイ」を選択する。
-5. 「デプロイ」ダイアログで、「ウェブアプリ」を選択し、「次のユーザーとして実行」を自分（YOUR_NAME@gmail.com）、「アクセスできるユーザー」を「全員」に設定する。
-6. 「デプロイ」ボタンをクリックし、表示されたウェブアプリケーションのURLをコピーする。
-7. `script.js`ファイルのgoogleSpreadsheetUrl変数に、コピーしたウェブアプリケーションURLを貼り付ける。
+4. Save the script and select "Deploy" > "New deployment".
+5. In the "Deploy" dialog, select "Web app", set "Execute as" to yourself ([YOUR_NAME@gmail.com](mailto:YOUR_NAME@gmail.com)), and set "Who has access" to "Anyone".
+6. Click the "Deploy" button and copy the displayed web application URL.
+7. Paste the copied web application URL into the `googleSpreadsheetUrl` variable in the `script.js` file.
 
-以上の手順を完了すると、タスクの結果がGoogle Spreadsheetに自動的に保存されるようなり、研究者は、スプレッドシート上でデータの集計や分析を行うことができます。タスクの結果は3回の入力セッションが終了後に3回分のスコアデータ全てが送信されます。
+Once these steps are completed, the task results will be automatically saved to the Google Spreadsheet, allowing researchers to aggregate and analyze the data on the spreadsheet. The task results are sent after all three typing sessions are completed, including the score data for all three sessions.
 
-送信されるデータは、`ID1`, `ID2`がそれぞれ参加者ID1および2であり、`SLAP1`, `TC1`, `SCORE1`, `CHEATED1` はそれぞれ、第1入力セッションにおけるSLAP入力数、総入力数（Total Characters）、スコア、およびコピー＆ペースト使用履歴（使用すれば1が入る）であり、`SLAP2`, `SLAP3`などはそれぞれ第2, 3セッションでのデータを意味する。`CHEATED`は、そのセッションにおいて、1度でもコピー&ペーストが用いられた場合には1を、用いられていない場合には0が格納されます。
+The submitted data includes `ID1` and `ID2` for participant IDs 1 and 2, respectively. `SLAP1`, `TC1`, `SCORE1`, and `CHEATED1` represent the number of SLAPs typed, total characters typed, score, and copy & paste usage history (1 if used) for the first typing session, while `SLAP2`, `SLAP3`, etc. represent the data for the second and third sessions. `CHEATED` is set to 1 if copy & paste was used at least once during that session, and 0 if not used.
 
-## 謝辞
+## Acknowledgments
 
-このプログラムの作成にあたり、明海大学の山田麻以氏からのアドバイスを得ました。また、青山学院大学の作者のゼミに所属する学生さんたちには、デバッグや最適な入力・作戦タイムやペナルティの設計のために、何度もタスクに参加していただきました。感謝いたします。
+In creating this program, I received advice from Mai Yamada of Meikai University. Also, the students in my seminar at Aoyama Gakuin University participated in the task many times for debugging and designing the optimal typing and strategy times and penalties. I am grateful to them.
+
+
